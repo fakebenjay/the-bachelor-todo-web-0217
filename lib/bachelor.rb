@@ -72,7 +72,6 @@ end
 def get_average_age_for_season(data, season)
   if data.keys.include?(season) == false
     return "We cannot accept this rose."
-
   else
     age_array = []
     average = nil
@@ -90,7 +89,7 @@ def get_average_age_for_season(data, season)
 
       average = (sum/age_array.count).round
 
-      end
     end
   return average
+  end
 end
